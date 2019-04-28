@@ -2,40 +2,35 @@ public class Test {
 
     public static void main(String[] args) {
 
-
         Parking p = new Parking(2);
 
-        Car v2 = new Car();
-        Car c1 = new Car();
-        Car c2 = new Car();
-        Car c3 = new Car();
-        Car c4 = new Car();
+        Car car1 = new Car();
+        Car car2 = new Car();
+        Suv suv1 = new Suv();
+        Suv suv2 = new Suv();
 
-        v2.setCar("Sedan",1122, "Blue", "Google");
-        v2.printCar();
+        car1.setCar("Sedan",1111, "Blue", "Google");
+        car2.setCar("Hatch",2222,"Red","Amazon");
+        suv1.setSuv("Mahindra",3333,"Black","Amazon");
+        suv2.setSuv("Ford",4444,"White","Google");
 
-        c1.setCar("Hatch",1111,"Red","Amazon");
-        c2.setCar("Sedan",2222,"Black","Amazon");
-        c3.setCar("Sedan",3333,"White","Google");
-        c4.setCar("Sedan",4444,"Blue","Google");
-
-        p.park(v2.number);
-        p.park(c1.number);
-        p.park(c2.number); //no space
+        p.park(car1.number);
+        p.park(car2.number);
+        p.park(suv1.number);
+        p.park(suv2.number); //no space
         p.printSlots();
 
-
-        v2.walletBalance = 600;
-        p.unPark(v2);
+        car1.walletBalance = 600;
+        p.unPark(car1);
         p.printSlots();
 
-        System.out.println("Car " + c2.number + " is parked -->" + c2.parked);
-        p.park(c2);
-        System.out.println("Car " + c2.number + " is parked -->" + c2.parked);
+        /*System.out.println("Car " + car3.number + " is parked -->" + car3.parked);
+        p.park(car3);
+        System.out.println("Car " + car3.number + " is parked -->" + car3.parked);
         p.printSlots();
 
         //p.park(c2.number);
-        //p.printSlots();
+        //p.printSlots();*/
 
 
     }

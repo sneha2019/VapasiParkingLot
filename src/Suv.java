@@ -6,24 +6,23 @@ public class Suv extends Vehicle {
         this.brand = brand;
     }
 
-    public void setSuv (){
-
+    public void setSuv (String t, int n, String c, String wt) {
+        type = t;
+        number = n;
+        color = c;
+        walletType = wt;
     }
 
     public void setWallet (){
-
+        System.out.println( "Suv number =" + number + " "+ walletType + "Wallet" + " Balance= "+walletBalance);
     }
 
-    public void setprint (){
-
+    void print() {
+        System.out.println("Is car parked ?.." + parked);
     }
 
-    void print(){
-
-    }
-
-    void suv(){
-
+    void printSuv(){
+        System.out.println("Car type is " + type + ". Number = " + number + " Color= " + color);
     }
 
 }

@@ -27,6 +27,6 @@ public class Car extends Vehicle {
         }
 
     void printCar(){
-        System.out.println("Car type is " + type + ". Number = " + number + " Color= " + color);
+        System.out.println("Suv type is " + type + ". Number = " + number + " Color= " + color);
     }
 }
